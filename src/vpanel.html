@@ -1,0 +1,21 @@
+<div class="vpanel" id="vpanel" role="dialog" aria-label="語音設定" hidden>
+  <div class="vh"><b>VOICE CAST</b><span>聲優陣容 · 語音設定</span><button type="button" class="x" id="vclose" aria-label="關閉">×</button></div>
+  <div class="vcols">
+  <fieldset><legend>主播</legend><div class="cast" id="vcast"></div></fieldset>
+  <fieldset><legend>播報方式</legend><div class="vopts" id="vmode"></div>
+    <div id="vpartner-wrap"><div class="sub">搭檔</div><div class="cast mini" id="vpartner"></div></div></fieldset>
+  <fieldset><legend>播報語言</legend><div class="vopts four" id="vlang"></div></fieldset>
+  <fieldset><legend>字幕語言</legend><div class="vopts five" id="vsub"></div>
+    <label class="row"><input type="checkbox" id="vai"> AI 台本：由 Claude 依角色把今天的事項寫成有感情的台詞並翻譯字幕（線上版）</label></fieldset>
+  <fieldset><legend>聲音來源</legend><div class="vopts" id="vengine"></div><div id="vsys"></div></fieldset>
+  <fieldset><legend>整體語速 <output id="vrate-o">1.0×</output></legend><div class="chips" id="vrate"></div></fieldset>
+  <fieldset><legend>今日簡報內容</legend><div class="vchk" id="vsecs"></div>
+    <label class="row"><input type="checkbox" id="vgreet"> 角色開場問候</label>
+    <label class="row"><input type="checkbox" id="vauto"> 每天第一次點擊時自動播放今日簡報</label>
+    <label class="row"><input type="checkbox" id="vdonev"> 完成任務時角色回應一句</label></fieldset>
+  <fieldset><legend>旁白播報範圍</legend><div class="vopts" id="vnarr"></div></fieldset>
+  </div>
+  <div class="vfoot" id="vfoot"></div>
+  <p class="vnote" id="vnote"></p>
+</div>
+<div class="cap" id="cap" hidden aria-live="polite"><i class="wave"><b></b><b></b><b></b><b></b><b></b></i><div><strong></strong><em></em><i class="pg"></i><span></span><small class="sub" hidden></small></div><button type="button" id="capstop" aria-label="停止播報">■</button></div>

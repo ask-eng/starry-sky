@@ -1,0 +1,30 @@
+{
+  "database": "paste-your-database-id-here",
+  "properties": {
+    "title": "Title",
+    "module": "Module",
+    "target": "Target",
+    "status": "Status",
+    "priority": "Priority",
+    "created": null
+  },
+  "moduleMap": {
+    "Weekly Review": "PHOENIX",
+    "Landing Page": "LAUNCH",
+    "Beta Program": "LAUNCH",
+    "Japanese N3": "LEARN",
+    "Running Plan": "HEALTH",
+    "Competitor Watch": "RADAR"
+  },
+  "clusters": [
+    { "code": "PHOENIX", "name": "Phoenix HQ", "color": "#f4cb72" },
+    { "code": "LAUNCH", "name": "Product Launch", "color": "#ff9a4d" },
+    { "code": "LEARN", "name": "Learning Lab", "color": "#b48cff" },
+    { "code": "HEALTH", "name": "Health & Fitness", "color": "#3df0c4" },
+    { "code": "RADAR", "name": "Market Radar", "color": "#5fb4ff" }
+  ],
+  "statusMap": {},
+  "skip": "test row|smoke test",
+  "limit": 500,
+  "out": "../phx-data.js"
+}

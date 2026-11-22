@@ -1,0 +1,32 @@
+<div class="hud" id="hud" aria-hidden="true">
+  <i class="hc tl"></i><i class="hc tr"><em id="hud-clock">--:--:--</em></i><i class="hc bl"></i><i class="hc br"><em><span id="hud-pos">AZ 000 · EL 00</span> · SYS NOMINAL</em></i>
+  <div class="tape" id="hud-tape"><div class="tape-in" id="hud-tape-in"></div><b id="hud-hdg">000°</b></div>
+  <div class="ret" id="hud-ret">
+    <svg viewBox="-110 -110 220 220"><g class="spin a"><circle r="96" class="dash"/></g><g class="spin b"><path d="M -78 0 A 78 78 0 0 1 -40 -67"/><path d="M 78 0 A 78 78 0 0 1 40 67"/><path d="M 0 -78 A 78 78 0 0 1 55 -55" class="thin"/></g>
+      <g class="tk"><path d="M 0 -104 V -90"/><path d="M 0 104 V 90"/><path d="M -104 0 H -90"/><path d="M 104 0 H 90"/></g><g class="spin c"><path d="M -6 -64 L 0 -56 L 6 -64" /><path d="M -6 64 L 0 56 L 6 64"/></g></svg>
+    <span class="rl">AI CORE · LOCK</span>
+  </div>
+  <div class="rd" id="hud-data"></div>
+  <canvas class="radar" id="hud-radar" width="300" height="300"></canvas>
+  <div class="scan"></div>
+</div>
+<div class="vpanel hpanel" id="hpanel" role="dialog" aria-label="HUD 與視覺設定" hidden>
+  <div class="vh"><b>HUD · VISUAL</b><span>抬頭顯示與視覺設定</span><button type="button" class="x" id="hclose" aria-label="關閉">×</button></div>
+  <div class="vcols">
+  <fieldset><legend>HUD</legend><label class="row"><input type="checkbox" id="h-on"> 顯示 HUD</label></fieldset>
+  <fieldset><legend>透明度 <output id="h-op-o">70%</output></legend><div class="chips" id="h-op"></div></fieldset>
+  <fieldset><legend>顏色</legend><div class="vopts four" id="h-col"></div></fieldset>
+  <fieldset><legend>元件</legend><div class="vchk" id="h-parts"></div></fieldset>
+  <fieldset><legend>流星雨</legend><div class="vopts four" id="h-met"></div></fieldset>
+  <fieldset><legend>畫質</legend><div class="vopts four" id="h-q"></div></fieldset>
+  <fieldset><legend>場景主題</legend><div class="vopts four" id="h-th"></div></fieldset>
+  <fieldset><legend>星星亮度</legend><div class="chips" id="h-sb"></div></fieldset>
+  <fieldset><legend>極光樣式</legend><div class="chips" id="h-aur"></div></fieldset>
+  <fieldset><legend>交接航道篩選</legend><div class="chips" id="h-rf"></div></fieldset>
+  <fieldset><legend>場景元素</legend><div class="vchk" id="h-el"></div></fieldset>
+  <fieldset><legend>Language · 語言</legend><div class="chips" id="h-lang"><button type="button" class="chip" data-lang="en">English</button><button type="button" class="chip" data-lang="zh">繁體中文</button></div></fieldset>
+  <fieldset id="h-ai" hidden><legend>AI (your API key)</legend><div class="aiform"><input type="password" id="h-aikey" autocomplete="off" spellcheck="false" placeholder="sk-ant-…" aria-label="Anthropic API key"><select id="h-aimodel" aria-label="Model"><option value="claude-opus-5-5">Claude Opus 5.5</option><option value="claude-sonnet-5-5">Claude Sonnet 5.5</option><option value="claude-haiku-5-5">Claude Haiku 5.5</option></select><div class="chips"><button type="button" class="chip" id="h-aisave">Save</button><button type="button" class="chip" id="h-aitest">Test</button><button type="button" class="chip" id="h-aidel">Remove</button></div></div><p class="vnote" id="h-ainote"></p></fieldset>
+  <fieldset id="h-local" hidden><legend>Local data</legend><div class="chips"><button type="button" class="chip" id="h-backup">⬇ Backup</button><label class="chip">⬆ Restore<input type="file" id="h-restore" accept="application/json,.json" hidden></label><button type="button" class="chip" id="h-demo">↺ Demo data</button><button type="button" class="chip" id="h-empty">Start empty</button></div><p class="vnote" id="h-localnote"></p></fieldset>
+  <fieldset><legend>資料</legend><div class="chips"><button type="button" class="chip" id="h-export">⬇ 匯出最新離線桌布</button></div><p class="vnote" id="h-exnote"></p></fieldset>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+phx-config.js
+phx-data.js
+tools/notion-sync.config.json
+node_modules/
+.DS_Store

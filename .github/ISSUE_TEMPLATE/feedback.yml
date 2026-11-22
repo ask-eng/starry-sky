@@ -1,0 +1,30 @@
+name: Feedback
+description: Tell us what you think. Anything goes, in any language.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for trying Phoenix Nebula! Short notes are fine.
+  - type: dropdown
+    id: how
+    attributes:
+      label: How did you use it?
+      options: [Browser tab, Desktop wallpaper, claude.ai Artifact, Just looked around]
+  - type: dropdown
+    id: data
+    attributes:
+      label: Which data?
+      options: [Demo data, Added by hand, Imported JSON, Notion sync, Other]
+  - type: textarea
+    id: liked
+    attributes:
+      label: What worked for you?
+  - type: textarea
+    id: missing
+    attributes:
+      label: What was confusing, annoying or missing?
+  - type: textarea
+    id: wish
+    attributes:
+      label: If you could change one thing, what would it be?
