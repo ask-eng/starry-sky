@@ -2,7 +2,9 @@
 
 **Your projects as a living 3D nebula.** Phoenix Nebula is a single-page dashboard you can run as a browser tab or a desktop wallpaper. Each project is a constellation. Tasks, handoffs from your AI assistants and things that need you drift in as signals. Open it, and the most important next step is already at the top.
 
-![Phoenix Nebula with demo data](docs/screenshot.jpg)
+**▶ [Try the live demo](https://ask-eng.github.io/starry-sky/)** — runs in your browser with demo data; nothing to install, nothing sent anywhere.
+
+[![Phoenix Nebula with demo data](docs/screenshot.jpg)](https://ask-eng.github.io/starry-sky/)
 
 > **Status: early, and looking for feedback.** It started as a personal dashboard and is now open source to find out whether it is useful to anyone else. Tell us what works, what doesn't and what you'd want: [open an issue](../../issues/new/choose) or start a [discussion](../../discussions). Feedback in any language is welcome.
 
@@ -19,6 +21,8 @@
 - **Bilingual UI.** English by default; Traditional Chinese with one click (the 中文 / EN button).
 
 ## Quick start
+
+The fastest way is the [live demo](https://ask-eng.github.io/starry-sky/). To run your own copy:
 
 1. Download or clone this repository.
 2. Open `index.html` in Chrome, Edge or Firefox.
